@@ -1,0 +1,644 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+body {
+    background: transparent radial-gradient(closest-side at 50% 50%, #58687E 0%, #39495E 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+
+/* {7-35} lines for the header part of the web page */
+
+.header {
+    margin: auto;
+    padding: auto;
+}
+
+.header p {
+    margin: auto;
+    padding: auto;
+    color: white;
+    font: normal normal normal 24px Ubuntu;
+    padding: 20px 0px 20px 20px;
+}
+
+.abc_logo {
+    padding-left: 20px;
+    padding-top: 20px;
+    top: 16px;
+    left: 30px;
+    opacity: 1;
+}
+
+.highradius_logo {
+    top: 22px;
+    left: 843px;
+    width: 235px;
+    height: 50px;
+    padding-left: 390px;
+}
+
+
+/* body part - table{add , edit & delete}  */
+
+.table {
+    width: 1480px;
+    height: 563px;
+    background: #273D49CC 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin: 0px 30px 30px 20px;
+}
+
+.nav-table {
+    display: flex;
+    float: right;
+}
+
+
+/* add-invoice css (Button) */
+
+.add-invoice {
+    width: 88px;
+    height: 35px;
+    border: 1px solid #14AFF1;
+    background-color: #273D49CC;
+    border-radius: 10px;
+    opacity: 1;
+    margin: 20px 20px 0 0;
+    justify-content: space-evenly;
+}
+
+.add-invoice p {
+    margin: auto;
+    color: white;
+    font: normal normal normal 16px Ubuntu;
+}
+
+
+/* edit-invoice css (Button) */
+
+.edit-invoice {
+    width: 88px;
+    height: 35px;
+    border: 1px solid #97A1A9;
+    background-color: #273D49CC;
+    border-radius: 10px;
+    opacity: 1;
+    margin: 20px 20px 0 0;
+    justify-content: space-evenly;
+}
+
+.edit-invoice p {
+    margin: auto;
+    color: white;
+    font: normal normal normal 16px Ubuntu;
+}
+
+
+/* delete-invoice css (Button) */
+
+.delete-invoice {
+    width: 103px;
+    height: 35px;
+    border: 1px solid #97A1A9;
+    background-color: #273D49CC;
+    border-radius: 10px;
+    opacity: 1;
+    margin: 20px 20px 0 0;
+    justify-content: space-evenly;
+}
+
+.delete-invoice p {
+    margin: auto;
+    color: white;
+    font: normal normal normal 16px Ubuntu;
+}
+
+
+/* search-bar css (Button) */
+
+.search-bar {
+    display: flex;
+    float: right;
+    margin: 20px 20px 0px 0px;
+    align-items: center;
+}
+
+.search-bar input[type=text] {
+    width: 300px;
+    height: 30px;
+    border: 1px solid #356680;
+    border-radius: 10px;
+    margin: 0px 0 0 3px;
+    outline: none;
+    background: #283A46 0% 0% no-repeat padding-box;
+    color: #97A1A9;
+}
+
+.search-bar img {
+    position: relative;
+    top: -5px;
+    left: -40px;
+    width: 20px;
+    height: 20px;
+}
+
+::placeholder {
+    font: normal normal normal 14px Ubuntu;
+    color: #97A1A9;
+    opacity: 1;
+    padding-left: 10px;
+    margin: auto;
+}
+
+
+/* grid of the table */
+
+.grid-table {
+    padding-top: 30px;
+}
+
+.test-set {
+    border-collapse: collapse;
+    border-spacing: 1px;
+    margin-left: 25px;
+}
+
+.test-set td {
+    color: #97A1A9;
+    padding-left: 72px;
+}
+
+ .tbody tr:nth-child(even) {
+    background-color: #283A46;
+   
+    
+}
+.thbody td {
+    font: normal normal normal 16px Ubuntu;
+   
+}
+
+.tbody td {
+    color: white;
+    font: normal normal normal 18px Ubuntu;
+    padding-top: 20px;
+}
+
+
+
+
+/* add a color for the checkbox */
+
+
+/* close */
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 24px;
+    margin-right: 30px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Modal--- Add */
+
+.Modaladd {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+label {
+    padding: 20px 20px 20px 20px;
+    display: inline-block;
+}
+
+.add-content {
+    background-color: #2A3E4C;
+    width: 900px;
+    height: 400px;
+    margin: auto;
+    margin-top: 85px;
+}
+
+.add-content p {
+    color: white;
+    text-align: left;
+    font: normal normal normal 18px Ubuntu;
+    padding: 30px 0px 30px 30px;
+    margin: 0;
+    opacity: 1;
+}
+
+.add_body {
+    border-top: 3px solid #283A46;
+}
+
+.addinvoice {
+    color: #97A1A9;
+    font: normal normal normal 16px Ubuntu;
+}
+
+.addinvoice textarea {
+    background: #283A46 0% 0% no-repeat padding-box;
+    border: 1px solid #356680;
+    border-radius: 10px;
+    opacity: 1;
+    padding-bottom: 50px;
+    margin-top: 10px;
+    margin-left: 62px;
+    width: 250px;
+    height: 105px;
+}
+
+.addinvoice input[type=text] {
+    width: 250px;
+    height: 35px;
+    background: #283A46;
+    border: 1px solid #356680;
+    border-radius: 10px;
+    text-align: left;
+    color: white;
+    opacity: 1;
+}
+
+.addinvoice input[type=date] {
+    width: 250px;
+    height: 35px;
+    color: white;
+    background: #283A46 0% 0% no-repeat padding-box;
+    border: 1px solid #356680;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background-image: url('/images/calendar_today-24px.svg');
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 2px;
+    opacity: 0.6;
+}
+
+
+
+/* id */
+
+#cusname {
+    margin-left: 10px;
+}
+
+#cusno {
+    margin-left: 27px;
+}
+
+#invoiceid {
+    margin-left: 45px;
+}
+
+#amount {
+    margin-left: 12px;
+}
+
+#duedate {
+    margin-left: 30px;
+}
+
+
+/*  */
+
+.footer {
+    margin-top: 15px;
+    border-top: 3px solid #283A46;
+}
+
+#cancel {
+    border: 1px solid #2A3E4C;
+    color: #14AFF1;
+    background-color: #2A3E4C;
+    text-align: left;
+    font: normal normal normal 18px Ubuntu;
+    padding: 15px 15px 15px 30px;
+}
+
+#reset {
+    top: 666px;
+    left: 1294px;
+    width: 87px;
+    height: 45px;
+    color: white;
+    border: 1px solid #14AFF1;
+    border-radius: 10px;
+    background-color: #2A3E4C;
+    font: normal normal normal 20px Ubuntu;
+}
+
+#save {
+    top: 666px;
+    left: 1294px;
+    width: 87px;
+    height: 45px;
+    color: white;
+    border: 1px solid #14AFF1;
+    border-radius: 10px;
+    background-color: #14AFF1;
+    font: normal normal normal 20px Ubuntu;
+}
+
+
+/* edit modal */
+
+.Modaledit {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+.edit-content {
+    background-color: #2A3E4C;
+    width: 435px;
+    height: 400px;
+    margin: auto;
+    margin-top: 85px;
+}
+
+.edit-content p {
+    color: white;
+    text-align: left;
+    font: normal normal normal 18px Ubuntu;
+    padding: 30px 0px 30px 30px;
+    margin: 0;
+    opacity: 1;
+}
+
+.edit_body {
+    border-top: 3px solid #283A46;
+}
+
+.editinvoice {
+    color: #97A1A9;
+    font: normal normal normal 16px Ubuntu;
+    margin-top: 10px;
+}
+
+.editinvoice input[type=text] {
+    width: 250px;
+    height: 35px;
+    background: #283A46 0% 0% no-repeat padding-box;
+    border: 1px solid #356680;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.editinvoice textarea {
+    background: #283A46 0% 0% no-repeat padding-box;
+    border: 1px solid #356680;
+    border-radius: 10px;
+    opacity: 1;
+    margin-top: 10px;
+    width: 250px;
+    height: 105px;
+    margin-left: 75px;
+    margin-bottom: 50px;
+}
+
+#cancele {
+    border: 1px solid #2A3E4C;
+    color: #14AFF1;
+    background-color: #2A3E4C;
+    text-align: left;
+    font: normal normal normal 20px Ubuntu;
+    padding: 15px 15px 15px 30px;
+}
+
+#resete {
+    top: 666px;
+    left: 1294px;
+    width: 87px;
+    height: 45px;
+    color: white;
+    border: 1px solid #14AFF1;
+    border-radius: 10px;
+    background-color: #2A3E4C;
+    font: normal normal normal 20px Ubuntu;
+}
+
+#savee {
+    top: 666px;
+    left: 1294px;
+    width: 87px;
+    height: 45px;
+    color: white;
+    border: 1px solid #14AFF1;
+    border-radius: 10px;
+    background-color: #14AFF1;
+    font: normal normal normal 20px Ubuntu;
+}
+
+.footer-edit {
+    border-top: 3px solid #283A46;
+    margin-top: 150px;
+}
+
+
+/* modal delete */
+
+.Modaldelete {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+.delete-content {
+    background-color: #2A3E4C;
+    width: 510px;
+    height: 300px;
+    margin: auto;
+    margin-top: 85px;
+}
+
+#deletep {
+    color: white;
+    text-align: left;
+    font: normal normal normal 18px Ubuntu;
+    padding: 30px 0px 30px 30px;
+    margin: 0;
+    opacity: 1;
+}
+
+.delete_body {
+    border-top: 3px solid #283A46;
+}
+
+.delete_body p {
+    font: normal normal normal 14px Ubuntu;
+    color: #C0C6CA;
+    padding-left: 30px;
+}
+
+.footer-delete {
+    border-top: 3px solid #283A46;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+#canceld {
+    top: 666px;
+    left: 1294px;
+    width: 87px;
+    height: 45px;
+    color: #14AFF1;
+    border: 1px solid #2A3E4C;
+    border-radius: 10px;
+    background-color: #2A3E4C;
+    font: normal normal normal 20px Ubuntu;
+}
+
+#saved {
+    top: 666px;
+    left: 1294px;
+    width: 87px;
+    height: 45px;
+    color: white;
+    border: 1px solid #14AFF1;
+    border-radius: 10px;
+    background-color: #14AFF1;
+    font: normal normal normal 20px Ubuntu;
+}
+
+/* error */
+
+.Modaldata {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    top: 280px;
+    left: 580px;
+    width: 100%;
+    height: 100%;
+}
+
+.errorp {
+    margin-right: 100px;
+}
+
+.errorp h3 {
+    color: white;
+    padding-left: 120px;
+}
+
+.errorp p {
+    color: #14AFF1;
+}
+
+.errorp img {
+    padding-left: 165px;
+}
+
+#canceler {
+    top: 666px;
+    left: 1294px;
+    width: 87px;
+    height: 45px;
+    color: #14AFF1;
+    border: 1px solid #2A3E4C;
+    border-radius: 10px;
+    background-color: #2A3E4C;
+    font: normal normal normal 16px Ubuntu;
+}
+/* pagination */
+.pagination {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    top: 190px;
+    width: 92.5rem;
+}
+
+.pagination__btn-1,
+.pagination__btn-2 {
+    height: 50px;
+    width: 50px;
+    background-color: #708596;
+    border-radius: 30rem;
+    color: #fff;
+    z-index: 1;
+    box-shadow: 0rem .2rem .6rem #645d5d69;
+}
+
+.arrow_left {
+    font-size: 16px;
+    position: relative;
+    top: 18px;
+    left: 18px;
+}
+
+.arrow_right {
+    font-size: 16px;
+    position: relative;
+    top: 18px;
+    right: -21px;
+}
